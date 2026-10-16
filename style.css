@@ -1,0 +1,341 @@
+.world-info-cleanup-settings {
+    --wic-line: rgba(127, 127, 127, 0.24);
+    --wic-line-soft: rgba(127, 127, 127, 0.14);
+    --wic-surface: rgba(127, 127, 127, 0.08);
+    --wic-surface-hover: rgba(127, 127, 127, 0.14);
+    --wic-muted: rgba(127, 127, 127, 0.82);
+    --wic-radius-large: 16px;
+    --wic-radius-medium: 12px;
+    --wic-radius-small: 9px;
+    color: var(--SmartThemeBodyColor);
+}
+
+.world-info-cleanup-settings .wic-drawer-header {
+    min-height: 46px;
+    padding: 10px 12px;
+    border-radius: var(--wic-radius-medium);
+}
+
+.world-info-cleanup-settings .wic-title {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    min-width: 0;
+    font-size: 0.95em;
+    font-weight: 650;
+    letter-spacing: 0.01em;
+}
+
+.world-info-cleanup-settings .wic-title-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 29px;
+    height: 29px;
+    flex: 0 0 29px;
+    border: 1px solid var(--wic-line);
+    border-radius: 9px;
+    background: var(--wic-surface);
+    font-size: 0.8em;
+}
+
+.world-info-cleanup-settings .wic-drawer-header .inline-drawer-icon {
+    opacity: 0.55;
+    font-size: 0.8em;
+}
+
+.world-info-cleanup-settings .wic-drawer-content {
+    padding: 8px 2px 4px;
+}
+
+.world-info-cleanup-settings .wic-intro {
+    padding: 17px 16px;
+    margin-bottom: 10px;
+    border: 1px solid var(--wic-line);
+    border-radius: var(--wic-radius-large);
+    background: var(--wic-surface);
+}
+
+.world-info-cleanup-settings .wic-intro-title {
+    margin-bottom: 5px;
+    font-size: 1em;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+}
+
+.world-info-cleanup-settings .wic-intro-text {
+    color: var(--wic-muted);
+    font-size: 0.8em;
+    line-height: 1.55;
+}
+
+.world-info-cleanup-settings .wic-primary-button {
+    width: 100%;
+    min-height: 44px;
+    margin: 0;
+    padding: 9px 14px;
+    border: 1px solid var(--SmartThemeBodyColor);
+    border-radius: var(--wic-radius-medium);
+    background: var(--SmartThemeBodyColor);
+    color: var(--SmartThemeBlurTintColor);
+    font-size: 0.88em;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    box-shadow: none;
+    transition:
+        opacity 0.18s ease,
+        transform 0.18s ease;
+}
+
+.world-info-cleanup-settings .wic-primary-button:active {
+    opacity: 0.78;
+    transform: scale(0.985);
+}
+
+.world-info-cleanup-settings .wic-warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 6px 2px;
+    color: var(--wic-muted);
+    font-size: 0.7em;
+    line-height: 1.4;
+}
+
+.world-info-cleanup-settings .wic-warning i {
+    font-size: 0.9em;
+}
+
+.world-info-cleanup-settings .wic-section {
+    margin-top: 14px;
+    overflow: hidden;
+    border: 1px solid var(--wic-line);
+    border-radius: var(--wic-radius-large);
+    background: var(--wic-surface);
+}
+
+.world-info-cleanup-settings .wic-section-title {
+    padding: 13px 14px 9px;
+    color: var(--wic-muted);
+    font-size: 0.72em;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+}
+
+.world-info-cleanup-settings .wic-setting {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 14px;
+    min-height: 64px;
+    margin: 0;
+    padding: 11px 14px;
+    border-top: 1px solid var(--wic-line-soft);
+}
+
+.world-info-cleanup-settings .wic-section-title + .wic-setting {
+    border-top: 0;
+}
+
+.world-info-cleanup-settings .wic-setting label {
+    display: flex;
+    min-width: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.world-info-cleanup-settings .wic-setting-name {
+    color: var(--SmartThemeBodyColor);
+    font-size: 0.84em;
+    font-weight: 560;
+    line-height: 1.35;
+}
+
+.world-info-cleanup-settings .wic-setting-desc {
+    color: var(--wic-muted);
+    font-size: 0.7em;
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+.world-info-cleanup-settings .wic-setting input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    width: 38px;
+    min-width: 38px;
+    height: 22px;
+    margin: 0;
+    border: 1px solid var(--wic-line);
+    border-radius: 999px;
+    background: rgba(127, 127, 127, 0.18);
+    box-shadow: none;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.world-info-cleanup-settings .wic-setting input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--SmartThemeBodyColor);
+    opacity: 0.58;
+    box-shadow: none;
+    transform: none;
+    transition:
+        left 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.world-info-cleanup-settings .wic-setting input[type="checkbox"]::after {
+    display: none;
+}
+
+.world-info-cleanup-settings .wic-setting input[type="checkbox"]:checked {
+    border-color: var(--SmartThemeBodyColor);
+    background: var(--SmartThemeBodyColor);
+}
+
+.world-info-cleanup-settings .wic-setting input[type="checkbox"]:checked::before {
+    left: 19px;
+    background: var(--SmartThemeBlurTintColor);
+    opacity: 1;
+}
+
+.world-info-cleanup-settings .wic-details {
+    margin-top: 10px;
+    overflow: hidden;
+    border: 1px solid var(--wic-line);
+    border-radius: var(--wic-radius-large);
+    background: var(--wic-surface);
+}
+
+.world-info-cleanup-settings .wic-details summary {
+    display: flex;
+    min-height: 46px;
+    padding: 0 14px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    color: var(--SmartThemeBodyColor);
+    cursor: pointer;
+    list-style: none;
+    font-size: 0.8em;
+    font-weight: 580;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.world-info-cleanup-settings .wic-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.world-info-cleanup-settings .wic-details summary > span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.world-info-cleanup-settings .wic-details summary > span i {
+    width: 17px;
+    color: var(--wic-muted);
+    text-align: center;
+}
+
+.world-info-cleanup-settings .wic-details-arrow {
+    color: var(--wic-muted);
+    font-size: 0.72em;
+    transition: transform 0.2s ease;
+}
+
+.world-info-cleanup-settings .wic-details[open] .wic-details-arrow {
+    transform: rotate(180deg);
+}
+
+.world-info-cleanup-settings .wic-details[open] summary {
+    border-bottom: 1px solid var(--wic-line-soft);
+}
+
+.world-info-cleanup-settings .wic-details-content {
+    padding: 0;
+}
+
+.world-info-cleanup-settings .wic-details-content .wic-setting:first-child {
+    border-top: 0;
+}
+
+.world-info-cleanup-settings .wic-debug-details {
+    background: transparent;
+}
+
+.world-info-cleanup-settings .wic-debug-content {
+    display: grid;
+    gap: 8px;
+    padding: 10px;
+}
+
+.world-info-cleanup-settings .wic-secondary-button {
+    width: 100%;
+    min-height: 39px;
+    margin: 0;
+    padding: 8px 12px;
+    border: 1px solid var(--wic-line);
+    border-radius: var(--wic-radius-small);
+    background: var(--wic-surface);
+    color: var(--SmartThemeBodyColor);
+    font-size: 0.76em;
+    font-weight: 500;
+    box-shadow: none;
+}
+
+.world-info-cleanup-settings .wic-secondary-button:active {
+    background: var(--wic-surface-hover);
+}
+
+.world-info-cleanup-settings .wic-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 14px 8px 5px;
+    color: var(--wic-muted);
+    font-size: 0.65em;
+}
+
+@media (max-width: 768px) {
+    .world-info-cleanup-settings .wic-drawer-content {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .world-info-cleanup-settings .wic-intro {
+        padding: 15px 14px;
+    }
+
+    .world-info-cleanup-settings .wic-setting {
+        min-height: 66px;
+        padding: 12px 13px;
+    }
+
+    .world-info-cleanup-settings .wic-setting-name {
+        font-size: 0.82em;
+    }
+
+    .world-info-cleanup-settings .wic-setting-desc {
+        font-size: 0.68em;
+    }
+
+    .world-info-cleanup-settings .wic-primary-button {
+        min-height: 46px;
+    }
+}
