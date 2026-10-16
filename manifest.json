@@ -1,0 +1,13 @@
+{
+    "display_name": "世界书管理",
+    "loading_order": 50,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "兔兔",
+    "version": "1.6.0",
+    "homePage": "https://github.com/Bunl5mi/spring-cleaning",
+    "description": "简洁的世界书检查、关联与清理工具",
+    "auto_update": true
+}
